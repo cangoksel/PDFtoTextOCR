@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.bytedeco.javacpp-presets:leptonica:windows-x86_64:1.72-1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.72-1.1/27d7cdaefc5a01d44003bbfc284044eebd8a2b9/leptonica-1.72-1.1-windows-x86_64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.72-1.1/af36d57eeb4e4d41c74a448644ecfec46ccc4551/leptonica-1.72-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

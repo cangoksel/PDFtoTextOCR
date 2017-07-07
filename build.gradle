@@ -1,0 +1,65 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+group 'tr.com.can'
+version '1.0-SNAPSHOT'
+
+ext {
+
+    if (Os.isFamily(Os.FAMILY_UNIX)) {
+        os = 'linux'
+    }
+    if (Os.isFamily(Os.FAMILY_MAC)) {
+        os = 'macosx'
+    }
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        os = 'windows'
+    }
+    arch = System.getProperty("os.arch");
+
+    if (arch == 'amd64') {
+        arch = 'x86_64'
+    }
+    opencvBinaryClassifer = os + '-' + arch;
+
+}
+
+buildscript {
+    ext.kotlin_version ="1.0.0"
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: "kotlin"
+
+sourceCompatibility = 1.8
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/myKotlin'
+    main.java.srcDirs += 'src/main/myJava'
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: "org.apache.pdfbox", name: "pdfbox", version: "1.8.10"
+    compile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1"
+    compile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1", classifier: opencvBinaryClassifer
+    compile group: "org.bytedeco.javacpp-presets", name: "leptonica", version: "1.72-1.1", classifier: opencvBinaryClassifer
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile group: "org.apache.commons", name: "commons-compress", version: "1.9"
+    compile group: "commons-io",name:"commons-io", version: "2.4"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testCompile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1"
+    testCompile group: "org.bytedeco.javacpp-presets", name: "tesseract", version: "3.04-1.1", classifier: opencvBinaryClassifer
+    testCompile group: "org.bytedeco.javacpp-presets", name: "leptonica", version: "1.72-1.1", classifier: opencvBinaryClassifer
+}

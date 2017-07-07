@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PDFtoTextOCR.iml" filepath="$PROJECT_DIR$/PDFtoTextOCR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PDFtoTextOCR_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PDFtoTextOCR_main.iml" group="PDFtoTextOCR" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PDFtoTextOCR_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PDFtoTextOCR_test.iml" group="PDFtoTextOCR" />
+    </modules>
+  </component>
+</project>
