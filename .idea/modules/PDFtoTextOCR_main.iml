@@ -53,6 +53,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: :antlr4-runtime-4.0.1z:" level="project" />
+    <orderEntry type="library" name="Gradle: :args4j-2.0.25:" level="project" />
+    <orderEntry type="library" name="Gradle: :berkeleylm-1.1.2:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-core-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-hyphenation-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-lm-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-morphology-0.9.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :zemberek-tokenization-0.9.0:" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.pdfbox:pdfbox:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:tesseract:3.04-1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.bytedeco.javacpp-presets:tesseract:windows-x86_64:3.04-1.1" level="project" />
